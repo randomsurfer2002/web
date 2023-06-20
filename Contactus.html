@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact Us</title>
+    <style>
+    .mr-10 {
+      margin-left: 30px;
+    }
+  </style>
+</head>
+<body  bgcolor="white"> 
+    
+    <header class="text-black-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a href="https://randomsurfer2002.github.io/web/"class="flex title-font font-medium items-center text-black-900 mb-4 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/photo_2022-12-27_22-02-04.jpg?raw=true" width="200" height="90">
+            <span class="ml-5 text-xl">Revital Fit</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+             <a href="Weightloss.html"class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Health Comeback Stories</a>
+            <a href="aboutus.html"class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">About Us</a>
+            <a href="Contactus.html"class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Contact Us</a>
+               <a href="services.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Services</a>
+          </nav>
+          <button onclick= "location.href= 'Bodyparameter.html'" class="inline-flex items-center bg-red-400 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 rounded text-base mt-4 md:mt-0">FIND MY PARAMETERS!
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+
+      <section class="text-gray-400 bg-gray-900 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We'll try to call as soon as possible after you submit your response. Don't worry your data safety is our outmost priority your info won't be leaked.</p>
+          </div>
+            
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+                <form method ="POST" name = "google-sheet">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+                  <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+                  <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                </div>
+              </div>
+              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="number" class="leading-7 text-sm text-gray-400">Phone No.</label>
+                      <input type="number" id="number" name="number" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                      <div class="p-2 w-1/2">
+                        <div class="relative">
+                          <label for="date" class="leading-7 text-sm text-gray-400">Your Date Of Birth:</label>
+                          <input type="date" id="date" name="date" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                        </div>
+                      </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-400">Any Prior disease or any message you want to share?</label>
+                  <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <a>
+                <button type="submit" class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">submit</button>
+                </a>
+                   </form>
+              </div>
+                    
+                    
+                    <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwKp1NPwKykT05xQ9Imp0nkDXDUFCOjNk2xsXodSKNZpHwbnqeCLKIupZyLmutq1i3P6w/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+                      
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                <a class="text-red-400">EMAIL AT: Pallaviherbal1980@Gmail.com</a>
+                <p class="leading-normal my-5">Office: 31/323/1-A, Shanti nagar, Professor colony
+                  <br>Kamla nagar, Agra, Uttar Pradesh, 282005
+                </p>
+                <a class="text-red-400">Instagram I'D: purity_with_pallavi, Follow for seeing results.(click the insta logo below to access the page).</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+                <section class="text-gray-400 bg-gray-900 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Meet Us personally aswell!</h1>
+          </div>
+                
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=revitalfit health and wellness club&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
+
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/photo_2022-12-27_22-02-04.jpg?raw=true" width="200" height="90">
+            <span class="ml-10 text-xl">Revitalfit</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-40 sm:border-l-2 sm:border-red-500 sm:py-14 sm:mt-0 mt-4">© 2023 Revitalfit 
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="https://instagram.com/purity_with_pallavi?igshid=Zjc2ZTc4Nzk=" class="ml-3 text-Purple-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+                <a href="https://www.youtube.com/@revitalfit" class="ml-3 text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" id="mainIconPathAttribute"></path> </svg>
+            </a>
+              <a href="https://www.facebook.com/profile.php?id=100089657191641&mibextid=ZbWKwL" class="ml-3 text-blue-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+              </a>
+            <a class="ml-3 text-purple-500">
+              
+            </a>
+          </span>
+        </div>
+      </footer>
+
+    
+</body>
+</html>
