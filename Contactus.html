@@ -84,17 +84,17 @@
     </section>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbz8N8k0XTpFiP_eklI-le4vOQfQ-1wg-UjQWXuRhByX7yuRhnR9zxZwooBSPCw_vn5Z8A/exec/exec/exec'; // Replace with your URL
-const form = document.forms['google-sheet'];
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyvyEMrthlTMNCutNDS48pQimQFYucrI-MYHaGOoWV7XjUKCWQd3Vx1FhqIt9TVhKSLnQ/exec';
+  const form = document.forms['google-sheet'];
 
-form.addEventListener('submit', e => {
+  form.addEventListener('submit', e => {
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("Thanks for contacting us! We will get back to you soon."))
-        .catch(error => console.error('Error!', error.message));
-});
+      .then(response => alert("Thanks for contacting us! We will get back to you soon."))
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
 
-    </script>
 </body>
 </html>
 
