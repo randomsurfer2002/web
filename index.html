@@ -1,175 +1,88 @@
-!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Purity Health</title>
-    <link rel="stylesheet" type="text/css" href="Style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevitalFit - Home</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
+
 <header>
-    <a href="#" class="logo">
-        <img src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" alt="Purity Health Logo">
-    </a>
-    <ul class="navlist">
-        <li><a href="Contactus.html">Contact Us</a></li>
-        <li><a href="Weightloss.html">Transformation Results</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-    </ul>
-    <div class="right-content">
-        <a href="Bodyparameter.html" class="nav-btn">Find My Parameters!</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </div>
+    <nav class="navbar">
+        <div class="logo">RevitalFit</div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Weightloss.html">Weight Loss</a></li>
+            <li><a href="Bodyparameter.html">Body Parameter</a></li>
+            <li><a href="Contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
     <div class="hero-text">
-        <h5 data-aos="fade-right" data-aos-duration="1400">#Let's Get Fit!</h5>
-        <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Purity Health</h1>
-        <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">
-            We provide proper weight loss and fitness solutions through our panel of experts and technical connectivity.
-            Let's have a balanced approach to our diet and exercise!
-        </p>
-        <div class="main-hero" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400">
-            <a href="Bodyparameter.html" class="btn">Find My Body Parameters Now!</a>
-        </div>
-        <div class="hero-img">
-            <img src="all photos/stock photo.png" alt="Hero Image">
-        </div>
+        <h1>Your Path To a Healthier Life Begins Here</h1>
+        <p>Get personalized diet plans, body analysis, and wellness guidance tailored for you.</p>
+        <a href="services.html" class="hero-btn">Get Started</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1554288243-673a1f0a7f33?auto=format&fit=crop&w=1200&q=80">
     </div>
 </section>
 
+<!-- SERVICES -->
+<section class="service-cards">
+    <h2>Our Key Offerings</h2>
 
-<section class="text-white-body-font">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white-900">Fitness Services And Solutions
-          <br class="hidden lg:inline-block">For All Ages!
-        </h1>
-        <p class="mb-4 leading-relaxed">Our carefully tailor made fitness plans and panel of experts help us in making right plan for you irrespective your age. Our large spectrum of suppliments and diet plans are flexible for almost all age groups.</p>
-        <div class="flex justify-center">
+    <div class="card-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80">
+            <h3>Weight Loss Plans</h3>
+            <p>Healthy, sustainable weight loss tailored to your body needs.</p>
+            <a href="Weightloss.html" class="read-more">Read More</a>
         </div>
-      </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/33673355.jpg?raw=true">
-      </div>
-    </div>
-  </section>
 
-
-  <section class="text-white-body-font">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white-900">Easy To Follow From Any Part Of
-          <br class="hidden lg:inline-block">The Globe With Great Technical Insights!
-        </h1>
-        <p class="mb-4 leading-relaxed">Join From Anywhere, As Our Services Are Available Through Offline As Well As Online Solutions, (Zoom,Google Business,Online Suppliment store, etc.), Coaches share knowledge and facts on video meetings along with exercises and solutions for lot of lifestyle diseases. </p>
-        <div class="flex justify-center">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1584467735867-8aa3f42f0783?auto=format&fit=crop&w=800&q=80">
+            <h3>Body Parameter Analysis</h3>
+            <p>Track your fitness with accurate body composition insights.</p>
+            <a href="Bodyparameter.html" class="read-more">Read More</a>
         </div>
-      </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/global-connection.png?raw=true">
-      </div>
-    </div>
-  </section>
 
-
-  <section class="text-white-body-font">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white-900">Fun Way Of Losing Weight,
-          <br class="hidden lg:inline-block">Improving your Mental quotient as well!
-        </h1>
-        <p class="mb-4 leading-relaxed">Be Part Of A Fun Community Where Others Share Their Results As Well! Improve Your Mental Health And Be Part Of A Great Fitness Journey! Also be part of weekly events where you and your family can show their talents and nurture your artistic self! Be part of our family!</p>
-        <div class="flex justify-center">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=800&q=80">
+            <h3>Wellness Coaching</h3>
+            <p>Learn habits that build long-term health and energy.</p>
+            <a href="services.html" class="read-more">Read More</a>
         </div>
-      </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/family-fun-day-WEB.png?raw=true">
-      </div>
+
     </div>
 </section>
 
-<div class="video-container">
-    <div class="video-wrapper">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o382nTpu6DE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="video-info">
-            <h2>Food Cravings?</h2>
-        </div>
-    </div>
-    <div class="video-wrapper">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XxBfCAkPh6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="video-info">
-            <h2>Exercise is Important</h2>
-        </div>
-    </div>
-</div>
-
-<section class="text-gray-400 bg-gray-900 body-font relative">
-  <div class="absolute inset-0 bg-gray-900">
-    <iframe title="map" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633468.3181163515!2d73.80477905273439!3d27.20944975651549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397471b66d18f641%3A0x3504a6ec6a8f349a!2sPurity%20with%20Pallavi%20Wellness%20Club!5e0!3m2!1sen!2sin!4v1734750414309!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  <div class="container px-5 py-24 mx-auto flex">
-    <div class="lg:w-1/3 md:w-1/2 bg-gray-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
-      <h2 class="text-white text-lg mb-1 font-medium title-font">Feedback</h2>
-      <div class="relative mb-4">
-        <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
-        <input type="email" id="email" name="email" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-      </div>
-      <div class="relative mb-4">
-        <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
-        <textarea id="message" name="message" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-      </div>
-      <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Button</button>
-      <p class="text-xs text-gray-400 text-opacity-90 mt-3">We value your Suggestions</p>
-    </div>
-  </div>
-</section>
-
-<script src="js/script.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>AOS.init({ offset: 1 });</script>
-
-<footer class="text-white-600 body-font">
-  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <a class="flex title-font font-medium items-center md:justify-start justify-center text-white-900">
-      <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
-      <span class="ml-10 text-xl">Purity health</span>
-    </a>
-    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-40 sm:border-l-2 sm:border-red-500 sm:py-14 sm:mt-0 mt-4">© 2025 Purity Health 
-    </p>
-    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-      <a href="https://instagram.com/purity_with_pallavi?igshid=Zjc2ZTc4Nzk=" class="ml-3 text-red-500">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-        </svg>
-      </a>
-        <a href="https://www.youtube.com/@purity198" class="ml-3 text-red-500">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" id="mainIconPathAttribute"></path> </svg>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=100089657191641&mibextid=ZbWKwL" class="ml-3 text-blue-500">
-        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-        </svg>
-        </a>
-      <a class="ml-3 text-purple-500">
-        
-      </a>
-    </span>
-  </div>
+<footer>
+    <p>© 2024 RevitalFit. All Rights Reserved.</p>
 </footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("show");
+    }
+</script>
 
 </body>
 </html>
+
+
 
 
 
