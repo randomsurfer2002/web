@@ -1,56 +1,237 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - RevitalFit</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
-
-<body>
-
-<header>
-    <nav class="navbar">
-        <div class="logo">RevitalFit</div>
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
-
-        <ul class="nav-links" id="navMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="Weightloss.html">Weight Loss</a></li>
-            <li><a href="Bodyparameter.html">Body Parameter</a></li>
-            <li><a href="Contactus.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="page-header">
-    <h1>Our Services</h1>
-    <p>Explore the solutions crafted for your well-being.</p>
-</section>
-
-<section class="content-section">
-    <h2>What We Offer</h2>
-
-    <ul>
-        <li>Weight Loss Programs</li>
-        <li>Body Composition Analysis</li>
-        <li>Nutrition & Diet Planning</li>
-        <li>Habit Building & Wellness Coaching</li>
-    </ul>
-</section>
-
-<footer>
-    <p>© 2024 RevitalFit. All Rights Reserved.</p>
-</footer>
-
-<script>
-    function toggleMenu() {
-        document.getElementById("navMenu").classList.toggle("show");
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Purity With Pallavi: Your Wellness Coach</title>
+    <style>
+    .mr-10 {
+      margin-left: 20px;
     }
-</script>
+  </style>
+</head>
+<body  bgcolor="white"> 
+    
+    <header class="text-black-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a href="https://randomsurfer2002.github.io/web/" class="flex title-font font-medium items-center text-black-900 mb-4 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
+            <span class="ml-5 text-xl">Purity With Pallavi</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a href="Weightloss.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Health Comeback Stories</a>
+            <a href="aboutus.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">About Us</a>
+            <a href="Contactus.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Contact Us</a>
+               <a href="services.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Services</a>
+          </nav>
+            <button onclick= "location.href= 'Bodyparameter.html'" class="inline-flex items-center bg-red-400 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 rounded text-base mt-4 md:mt-0">FIND MY PARAMETERS!
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+    <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Services</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Here are our services which make us apart from the rest!</p>
+    </div>
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">500+</h2>
+          <p class="leading-relaxed">Families Helped</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-gray-900">8</h2>
+          <p class="leading-relaxed">Top notch services</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">Get a Coach</h2>
+                <p class="leading-relaxed">Get Personal Guidance From Our Expert Coaches!</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+     <img src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/chat.png?raw=true" alt="none" style="background-color: transparent; height: 100%; width: 100%; object-fit: cover;">
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">Live Chat Support</h2>
+                <p class="leading-relaxed">Live Chat In Our Meeting Or With Us To Stay Connected</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+  <img src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/nutrition.png?raw=true" alt="none" style="background-color: transparent; height: 100%; width: 100%; object-fit: cover;">
+</div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">Complimentary Nutrition Products</h2>
+                <p class="leading-relaxed">Get Complimentary Products With Our Services.</p>
+              </div>
+            </div>
+          </div>
+             <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+                <img src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/fit%20hour.png?raw=true" alt="none" style="background-color: transparent; height: 100%; width: 100%; object-fit: cover;">
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">Fit Hour Club</h2>
+                <p class="leading-relaxed">Get Exercise For An Hour With Education Related To Your Daily Diet And Health</p>
+              </div>
+            </div>
+          </div>
+             <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">5</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+                <img src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/family.png?raw=true" alt="none" style="background-color: transparent; height: 100%; width: 100%; object-fit: cover;">
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">Events For Fun And Family!!</h2>
+                <p class="leading-relaxed">Get Fun Events like family day, children's day That You Can Enjoy With Your Family, Great Stressbuster Indeed!! .</p>
+              </div>
+            </div>
+          </div>
+             <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">6</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+               <img src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/monet%20saver.png?raw=true" alt="none" style="background-color: transparent; height: 100%; width: 100%; object-fit: cover;">
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">30 Days Money-Back Guarantee</h2>
+                <p class="leading-relaxed">If There's No Change In Your Parameters Even After Following Our Plan Consistently And Diligently, Regularly Joining Our Classes Then Your Money Will Be Returned Without Any Objections.</p>
+              </div>
+            </div>
+          </div>
+             <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">7</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+                <img src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/stat.png?raw=true" alt="none" style="background-color: transparent; height: 100%; width: 100%; object-fit: cover;">
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">Health Stats And Diet Planning</h2>
+                <p class="leading-relaxed">Get Your Health Stats Either Physically Or Virtually And Get Personal Diet Plan After Contacting Us.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">8</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+               <img src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/healthy%20food.png?raw=true" alt="none" style="background-color: transparent; height: 100%; width: 100%; object-fit: cover;">
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-white mb-1 text-xl">Healthy Meal Ideas</h2>
+                <p class="leading-relaxed">Get Healthy, Filling And Tasty Meal Ideas From Our Experts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+      <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white">Contact Now On: +91 7906125063 !!</h1>
+    </div>
+  </div>
+</section>
+
+           <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
+            <span class="ml-10 text-xl">Purity With Pallavi</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-40 sm:border-l-2 sm:border-red-500 sm:py-14 sm:mt-0 mt-4">© 2023 Purity With Pallavi 
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="https://instagram.com/purity_with_pallavi?igshid=Zjc2ZTc4Nzk=" class="ml-3 text-red-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+              <a href="https://www.youtube.com/@purity198" class="ml-3 text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" id="mainIconPathAttribute"></path> </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100089657191641&mibextid=ZbWKwL" class="ml-3 text-blue-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+              </a>
+            <a class="ml-3 text-purple-500">
+              
+            </a>
+          </span>
+        </div>
+      </footer>
+
+
 
 </body>
 </html>
+
 
