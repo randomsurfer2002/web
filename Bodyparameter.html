@@ -1,191 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
-<title>Purity With Pallavi: Your Wellness Coach</title>
-<style>
-.mr-10 { margin-left: 20px; }
-.health-meter {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: conic-gradient(green 0deg, yellow 0deg, red 0deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  position: relative;
-}
-.health-meter .needle {
-  width: 2px;
-  height: 120px;
-  background: black;
-  position: absolute;
-  bottom: 50%;
-  transform-origin: bottom center;
-  transform: rotate(0deg);
-  transition: transform 1s ease-in-out;
-}
-.health-status {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 10px;
-  font-weight: bold;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Purity With Pallavi: Your Wellness Coach</title>
+  <style>
+    .mr-10 { margin-left: 20px; }
+  </style>
 </head>
-<body bgcolor="white">
+<body class="bg-gray-900 text-white">
 
-<header class="text-black-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a href="https://randomsurfer2002.github.io/web/" class="flex title-font font-medium items-center text-black-900 mb-4 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
-      <span class="ml-5 text-xl">Purity With Pallavi</span>
-    </a>
-    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a href="Weightloss.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Health Comeback Stories</a>
-      <a href="aboutus.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">About Us</a>
-      <a href="Contactus.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Contact Us</a>
-      <a href="services.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Services</a>
-    </nav>
-    <button onclick="location.href='Bodyparameter.html'" class="inline-flex items-center bg-red-400 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 rounded text-base mt-4 md:mt-0">FIND MY PARAMETERS!
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </button>
-  </div>
-</header>
+  <!-- Header -->
+  <header class="text-black-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a href="https://randomsurfer2002.github.io/web/" class="flex title-font font-medium items-center text-black-900 mb-4 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
+        <span class="ml-5 text-xl">Purity With Pallavi</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a href="Weightloss.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-900">Health Comeback Stories</a>
+        <a href="aboutus.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-900">About Us</a>
+        <a href="Contactus.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-900">Contact Us</a>
+        <a href="services.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-900">Services</a>
+      </nav>
+      <button onclick="location.href='Bodyparameter.html'" class="inline-flex items-center bg-red-400 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 rounded text-base mt-4 md:mt-0">
+        FIND MY PARAMETERS!
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
 
-<form name="TESTING">
-  <section class="text-gray-400 bg-gray-900 body-font relative">
+  <!-- Parameter Form -->
+  <section class="text-gray-400 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Basic Health Parameter Calculator</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Fill in your details below to calculate your health parameters. Make sure to use the given units.</p>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Fill in your details to check your health parameters and see how fit you are. Use the "Calculate" button below.</p>
       </div>
 
       <div class="lg:w-1/2 md:w-2/3 mx-auto">
         <div class="flex flex-wrap -m-2">
-
-          <!-- Weight -->
-          <div class="p-2 w-full">
-            <label for="weight" class="leading-7 text-sm text-white">Your Weight (kg):</label>
-            <input type="number" step="any" id="weight" name="WEIGHT" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 text-white py-2 px-3 outline-none" required>
+          <div class="p-2 w-1/2">
+            <label class="leading-7 text-sm text-white">Weight (kg)</label>
+            <input type="number" step="any" id="weight" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 py-2 px-3 text-gray-100">
           </div>
 
-          <!-- Height -->
-          <div class="p-2 w-full">
-            <label for="height" class="leading-7 text-sm text-white">Your Height (cm):</label>
-            <input type="number" step="any" id="height" onchange="calc()" name="HEIGHT" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 text-white py-2 px-3 outline-none" required>
+          <div class="p-2 w-1/2">
+            <label class="leading-7 text-sm text-white">Height (cm)</label>
+            <input type="number" step="any" id="height" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 py-2 px-3 text-gray-100">
           </div>
 
-          <!-- Age -->
-          <div class="p-2 w-full">
-            <label for="age" class="leading-7 text-sm text-white">Your Age (years):</label>
-            <input type="number" id="age" name="AGE" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 text-white py-2 px-3 outline-none" required>
+          <div class="p-2 w-1/2">
+            <label class="leading-7 text-sm text-white">Age (years)</label>
+            <input type="number" id="age" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 py-2 px-3 text-gray-100">
           </div>
 
-          <!-- Gender -->
-          <div class="p-2 w-full">
-            <label for="gen" class="leading-7 text-sm text-white">Your Gender (Male/Female):</label>
-            <input type="text" id="gen" onchange="calculate()" name="GENDER" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 text-white py-2 px-3 outline-none" required>
+          <div class="p-2 w-1/2">
+            <label class="leading-7 text-sm text-white">Gender (Male/Female)</label>
+            <input type="text" id="gender" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 py-2 px-3 text-gray-100">
           </div>
 
-          <!-- Submit Button -->
           <div class="p-2 w-full text-center">
-            <button type="button" onclick="calculate()" class="bg-red-500 text-white py-2 px-6 rounded hover:bg-red-600">Calculate My Health Parameters</button>
+            <button onclick="calculate()" class="bg-red-500 hover:bg-red-600 py-2 px-8 rounded text-lg">Calculate</button>
           </div>
-
         </div>
       </div>
     </div>
   </section>
-</form>
 
+  <!-- Results Display -->
+  <section class="text-gray-400 body-font">
+    <div class="container px-5 py-12 mx-auto text-center">
+      <h2 class="text-2xl font-medium text-white mb-4">Your Health Parameters</h2>
+      <div id="results" class="text-white text-lg space-y-2"></div>
+    </div>
+  </section>
 
-<script type="text/javascript">
-// Existing calculation functions (BMI, BFP, etc.)
-function calculate() {
-  var Age = document.TESTING.AGE.value,
-      bmi = document.TESTING.BMI.value,
-      gen = document.TESTING.GENDER.value,
-      h = document.TESTING.HEIGHT.value,
-      weight = document.TESTING.WEIGHT.value;
+  <!-- Health Risk Meter -->
+  <section class="text-gray-400 body-font">
+    <div class="container px-5 py-12 mx-auto text-center">
+      <h2 class="text-2xl font-medium text-white mb-4">Health Risk Meter</h2>
+      <div class="w-full bg-gray-700 rounded-full h-6">
+        <div id="riskBar" class="bg-red-500 h-6 rounded-full w-0 transition-all duration-1000"></div>
+      </div>
+      <p id="riskText" class="mt-2 text-white text-lg"></p>
+    </div>
+  </section>
 
-  if(!Age || !bmi || !gen || !h || !weight) return;
+  <!-- Footer -->
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
+        <span class="ml-10 text-xl">Purity With Pallavi</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-40 sm:border-l-2 sm:border-red-500 sm:py-14 sm:mt-0 mt-4">© 2023 Purity With Pallavi</p>
+    </div>
+  </footer>
 
-  var bfp, bmr, wi, mhr, ideal, vfp;
-  if(gen.toLowerCase() == "female") {
-    bfp = (1.2 * bmi) + (0.23 * Age)-5.4;
-    bmr = (10 * weight) + (6.25 * h) - (5 * Age) - 161;
-    ideal = h - 105;
-  } else {
-    bfp = (1.2 * bmi) + (0.23 * Age)-16.2;
-    bmr = (10 * weight) + (6.25 * h) - (5 * Age) + 5;
-    ideal = h - 100;
-  }
-  wi = (2.204 * weight)/67.6;
-  mhr = 220 - Age;
-  vfp = (bmi>30) ? (bfp*0.48) : (bfp*0.29);
+  <!-- Script -->
+  <script>
+    function calculate() {
+      const weight = parseFloat(document.getElementById("weight").value);
+      const height = parseFloat(document.getElementById("height").value);
+      const age = parseFloat(document.getElementById("age").value);
+      const gender = document.getElementById("gender").value.toLowerCase();
 
-  document.TESTING.BFP.value = bfp.toFixed(2);
-  document.TESTING.BMR.value = bmr.toFixed(2);
-  document.TESTING.WI.value = wi.toFixed(2);
-  document.TESTING.MHR.value = mhr.toFixed(2);
-  document.TESTING.VFP.value = vfp.toFixed(2);
-  document.TESTING.IW.value = ideal.toFixed(2);
-}
+      if (!weight || !height || !age || !gender) {
+        alert("Please fill all fields correctly.");
+        return;
+      }
 
-// BMI calculator
-function calc() {
-  var w = document.TESTING.WEIGHT.value,
-      h = document.TESTING.HEIGHT.value;
-  if(!w || !h) return;
-  var bmi = (w * 10000)/(h*h);
-  document.TESTING.BMI.value = bmi.toFixed(2);
-}
+      const bmi = (weight * 10000) / (height * height);
+      let bfp, bmr, ideal, vfp;
 
-// Health Risk Meter function
-function updateHealthMeter() {
-  var bmi = parseFloat(document.TESTING.BMI.value),
-      bfp = parseFloat(document.TESTING.BFP.value),
-      Age = parseFloat(document.TESTING.AGE.value);
-  
-  if(!bmi || !bfp || !Age) return;
+      if (gender === "female") {
+        bfp = (1.2 * bmi) + (0.23 * age) - 5.4;
+        bmr = (10 * weight) + (6.25 * height) - (5 * age) - 161;
+        ideal = height - 105;
+      } else {
+        bfp = (1.2 * bmi) + (0.23 * age) - 16.2;
+        bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+        ideal = height - 100;
+      }
 
-  // Simple risk score (0-100)
-  var riskScore = 0;
-  if(bmi < 18.5) riskScore += 20;
-  else if(bmi <= 24.9) riskScore += 5;
-  else if(bmi <= 29.9) riskScore += 40;
-  else riskScore += 70;
+      const wi = (2.204 * weight) / 67.6;
+      const mhr = 220 - age;
+      vfp = bmi > 30 ? bfp * 0.48 : bfp * 0.29;
 
-  if(bfp > 25) riskScore += 20;
-  else if(bfp < 10) riskScore += 10;
+      // Show results
+      document.getElementById("results").innerHTML = `
+        <p>BMI: ${bmi.toFixed(1)}</p>
+        <p>Body Fat %: ${bfp.toFixed(1)}</p>
+        <p>Visceral Fat %: ${vfp.toFixed(1)}</p>
+        <p>BMR: ${bmr.toFixed(0)}</p>
+        <p>Water Intake: ${wi.toFixed(1)} L/day</p>
+        <p>Max Heart Rate: ${mhr} bpm</p>
+        <p>Approx Ideal Weight: ${ideal.toFixed(1)} kg</p>
+      `;
 
-  if(Age > 45) riskScore += 15;
+      // Health Risk Meter
+      let riskPercent = 0;
+      let riskText = "";
+      if (bmi < 18.5) { riskPercent = 30; riskText = "Underweight: Mild Health Risk"; }
+      else if (bmi < 25) { riskPercent = 10; riskText = "Normal Weight: Low Health Risk"; }
+      else if (bmi < 30) { riskPercent = 50; riskText = "Overweight: Moderate Health Risk"; }
+      else { riskPercent = 90; riskText = "Obese: High Health Risk"; }
 
-  if(riskScore > 100) riskScore = 100;
-
-  // Animate needle
-  var deg = (riskScore/100)*180; // half circle
-  document.getElementById("needle").style.transform = "rotate(" + deg + "deg)";
-
-  // Update health status
-  var statusText = "";
-  if(riskScore <= 30) statusText = "You are Fit ✅";
-  else if(riskScore <= 60) statusText = "Moderate Risk ⚠️";
-  else statusText = "High Risk ❌";
-
-  document.getElementById("healthStatus").innerText = statusText;
-}
-</script>
+      document.getElementById("riskBar").style.width = riskPercent + "%";
+      document.getElementById("riskText").innerText = riskText;
+    }
+  </script>
 
 </body>
 </html>
-
-
-
