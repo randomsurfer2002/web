@@ -8,6 +8,13 @@
   <title>Purity With Pallavi: Your Wellness Coach</title>
   <style>
     .mr-10 { margin-left: 20px; }
+    #riskBar {
+      height: 25px;
+      border-radius: 12px;
+      background: linear-gradient(to right, green, yellow, red);
+      width: 0%;
+      transition: width 1.5s ease-in-out;
+    }
   </style>
 </head>
 <body class="bg-gray-900 text-white">
@@ -20,12 +27,12 @@
         <span class="ml-5 text-xl">Purity With Pallavi</span>
       </a>
       <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-        <a href="Weightloss.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-900">Health Comeback Stories</a>
-        <a href="aboutus.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-900">About Us</a>
-        <a href="Contactus.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-900">Contact Us</a>
-        <a href="services.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-900">Services</a>
+        <a href="Weightloss.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-500">Health Comeback Stories</a>
+        <a href="aboutus.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-500">About Us</a>
+        <a href="Contactus.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-500">Contact Us</a>
+        <a href="services.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-red-500">Services</a>
       </nav>
-      <button onclick="location.href='Bodyparameter.html'" class="inline-flex items-center bg-red-400 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 rounded text-base mt-4 md:mt-0">
+      <button class="inline-flex items-center bg-red-400 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 rounded text-base mt-4 md:mt-0">
         FIND MY PARAMETERS!
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -34,67 +41,69 @@
     </div>
   </header>
 
-  <!-- Parameter Form -->
-  <section class="text-gray-400 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-12">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Basic Health Parameter Calculator</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Fill in your details to check your health parameters and see how fit you are. Use the "Calculate" button below.</p>
-      </div>
+  <!-- Form Section -->
+  <form name="TESTING">
+    <section class="text-gray-400 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Basic Health Parameter Calculator</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Let's check some of your basic health parameters and see how fit you are. Fill in the details in order and use only the given units.</p>
+        </div>
 
-      <div class="lg:w-1/2 md:w-2/3 mx-auto">
-        <div class="flex flex-wrap -m-2">
-          <div class="p-2 w-1/2">
-            <label class="leading-7 text-sm text-white">Weight (kg)</label>
-            <input type="number" step="any" id="weight" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 py-2 px-3 text-gray-100">
-          </div>
-
-          <div class="p-2 w-1/2">
-            <label class="leading-7 text-sm text-white">Height (cm)</label>
-            <input type="number" step="any" id="height" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 py-2 px-3 text-gray-100">
-          </div>
-
-          <div class="p-2 w-1/2">
-            <label class="leading-7 text-sm text-white">Age (years)</label>
-            <input type="number" id="age" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 py-2 px-3 text-gray-100">
-          </div>
-
-          <div class="p-2 w-1/2">
-            <label class="leading-7 text-sm text-white">Gender (Male/Female)</label>
-            <input type="text" id="gender" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 py-2 px-3 text-gray-100">
-          </div>
-
-          <div class="p-2 w-full text-center">
-            <button onclick="calculate()" class="bg-red-500 hover:bg-red-600 py-2 px-8 rounded text-lg">Calculate</button>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <label class="leading-7 text-sm text-gray-400">Name:</label>
+              <input type="text" id="name" name="NAME" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-white py-1 px-3 leading-8" required>
+            </div>
+            <div class="p-2 w-1/2">
+              <label class="leading-7 text-sm text-gray-400">Email:</label>
+              <input type="email" id="email" name="EMAIL" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-white py-1 px-3 leading-8" required>
+            </div>
+            <div class="p-2 w-1/2">
+              <label class="leading-7 text-sm text-gray-400">Contact Number:</label>
+              <input type="number" id="phone" name="PHONE" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-white py-1 px-3 leading-8" required>
+            </div>
+            <div class="p-2 w-1/2">
+              <label class="leading-7 text-sm text-gray-400">Weight (kg):</label>
+              <input type="number" step="any" id="weight" name="WEIGHT" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-white py-1 px-3 leading-8" required>
+            </div>
+            <div class="p-2 w-1/2">
+              <label class="leading-7 text-sm text-gray-400">Height (cm):</label>
+              <input type="number" step="any" id="height" name="HEIGHT" onchange="calcBMI()" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-white py-1 px-3 leading-8" required>
+            </div>
+            <div class="p-2 w-1/2">
+              <label class="leading-7 text-sm text-gray-400">Age (years):</label>
+              <input type="number" id="age" name="AGE" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-white py-1 px-3 leading-8" required>
+            </div>
+            <div class="p-2 w-1/2">
+              <label class="leading-7 text-sm text-gray-400">Gender (Male/Female):</label>
+              <input type="text" id="gender" name="GENDER" onchange="calculate()" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-white py-1 px-3 leading-8" required>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </form>
 
-  <!-- Results Display -->
+  <!-- Results Section -->
   <section class="text-gray-400 body-font">
-    <div class="container px-5 py-12 mx-auto text-center">
-      <h2 class="text-2xl font-medium text-white mb-4">Your Health Parameters</h2>
-      <div id="results" class="text-white text-lg space-y-2"></div>
-    </div>
-  </section>
-
-  <!-- Health Risk Meter -->
-  <section class="text-gray-400 body-font">
-    <div class="container px-5 py-12 mx-auto text-center">
-      <h2 class="text-2xl font-medium text-white mb-4">Health Risk Meter</h2>
-      <div class="w-full bg-gray-700 rounded-full h-6">
-        <div id="riskBar" class="bg-red-500 h-6 rounded-full w-0 transition-all duration-1000"></div>
+    <div class="container px-5 py-6 mx-auto text-center">
+      <h2 class="text-2xl font-medium mb-4">Your Health Risk Meter</h2>
+      <div class="w-full bg-gray-700 rounded-full overflow-hidden h-8 mb-2">
+        <div id="riskBar"></div>
       </div>
-      <p id="riskText" class="mt-2 text-white text-lg"></p>
+      <p id="riskText" class="text-white font-semibold mb-2"></p>
+      <p id="riskFact" class="text-white italic mb-4"></p>
+      <div id="results" class="text-left mx-auto w-2/3 bg-gray-800 p-4 rounded border border-gray-600"></div>
+      <button onclick="downloadPDF()" class="bg-blue-500 hover:bg-blue-600 py-2 px-6 rounded mt-4 text-white">Download PDF</button>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-gray-600 body-font">
+  <footer class="text-gray-400 body-font mt-12">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
         <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
         <span class="ml-10 text-xl">Purity With Pallavi</span>
       </a>
@@ -102,23 +111,35 @@
     </div>
   </footer>
 
-  <!-- Script -->
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script>
+    const healthFacts = {
+      underweight: ["Being underweight may weaken your immune system.", "Consider adding nutrient-dense foods to your diet."],
+      normal: ["You are in a healthy weight range. Keep maintaining balanced nutrition.", "Regular exercise is key to staying fit!"],
+      overweight: ["Being overweight increases risk of heart disease and diabetes.", "Include more physical activity in your daily routine."],
+      obese: ["Obesity can lead to serious health complications.", "Consult a health professional for a weight loss plan."]
+    };
+
+    function calcBMI() {
+      const weight = parseFloat(document.getElementById("weight").value);
+      const height = parseFloat(document.getElementById("height").value);
+      if(weight && height) {
+        const bmi = (weight * 10000) / (height * height);
+        document.TESTING.BMI = { value: bmi.toFixed(1) }; // temporary
+      }
+    }
+
     function calculate() {
       const weight = parseFloat(document.getElementById("weight").value);
       const height = parseFloat(document.getElementById("height").value);
       const age = parseFloat(document.getElementById("age").value);
       const gender = document.getElementById("gender").value.toLowerCase();
-
-      if (!weight || !height || !age || !gender) {
-        alert("Please fill all fields correctly.");
-        return;
-      }
+      if(!weight || !height || !age || !gender) return alert("Please fill all fields.");
 
       const bmi = (weight * 10000) / (height * height);
       let bfp, bmr, ideal, vfp;
-
-      if (gender === "female") {
+      if(gender === "female") {
         bfp = (1.2 * bmi) + (0.23 * age) - 5.4;
         bmr = (10 * weight) + (6.25 * height) - (5 * age) - 161;
         ideal = height - 105;
@@ -127,12 +148,10 @@
         bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5;
         ideal = height - 100;
       }
-
-      const wi = (2.204 * weight) / 67.6;
+      const wi = (2.204 * weight)/67.6;
       const mhr = 220 - age;
       vfp = bmi > 30 ? bfp * 0.48 : bfp * 0.29;
 
-      // Show results
       document.getElementById("results").innerHTML = `
         <p>BMI: ${bmi.toFixed(1)}</p>
         <p>Body Fat %: ${bfp.toFixed(1)}</p>
@@ -144,17 +163,37 @@
       `;
 
       // Health Risk Meter
-      let riskPercent = 0;
-      let riskText = "";
-      if (bmi < 18.5) { riskPercent = 30; riskText = "Underweight: Mild Health Risk"; }
-      else if (bmi < 25) { riskPercent = 10; riskText = "Normal Weight: Low Health Risk"; }
-      else if (bmi < 30) { riskPercent = 50; riskText = "Overweight: Moderate Health Risk"; }
-      else { riskPercent = 90; riskText = "Obese: High Health Risk"; }
+      let riskPercent=0, riskText="", factList=[];
+      if(bmi<18.5){riskPercent=30; riskText="Underweight"; factList=healthFacts.underweight;}
+      else if(bmi<25){riskPercent=10; riskText="Normal Weight"; factList=healthFacts.normal;}
+      else if(bmi<30){riskPercent=50; riskText="Overweight"; factList=healthFacts.overweight;}
+      else{riskPercent=90; riskText="Obese"; factList=healthFacts.obese;}
 
-      document.getElementById("riskBar").style.width = riskPercent + "%";
-      document.getElementById("riskText").innerText = riskText;
+      document.getElementById("riskBar").style.width = riskPercent+"%";
+      document.getElementById("riskText").innerText = riskText + " - Health Risk Level";
+      document.getElementById("riskFact").innerText = factList[Math.floor(Math.random()*factList.length)];
+    }
+
+    function downloadPDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      const name = document.getElementById("name").value || "Anonymous";
+      const email = document.getElementById("email").value || "Not Provided";
+      const phone = document.getElementById("phone").value || "Not Provided";
+      const results = document.getElementById("results").innerText;
+
+      doc.setFontSize(16);
+      doc.text("Health Parameter Report", 20, 20);
+      doc.setFontSize(12);
+      doc.text(`Name: ${name}`, 20, 35);
+      doc.text(`Email: ${email}`, 20, 42);
+      doc.text(`Phone: ${phone}`, 20, 49);
+      doc.text("------", 20, 55);
+      doc.text(results, 20, 65);
+      doc.save(`${name}_HealthReport.pdf`);
     }
   </script>
-
 </body>
 </html>
+
+
