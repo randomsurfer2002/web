@@ -60,36 +60,51 @@
 </header>
 
 <form name="TESTING">
-<section class="text-gray-400 bg-gray-900 body-font relative">
-<div class="container px-5 py-24 mx-auto">
-<div class="flex flex-col text-center w-full mb-12">
-<h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Basic Health Parameter Calculator</h1>
-<p class="lg:w-2/3 mx-auto leading-relaxed text-base">Let's check some of your basic health parameters and see if you are really fit. Please fill details in order and use given units.</p>
-</div>
+  <section class="text-gray-400 bg-gray-900 body-font relative">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Basic Health Parameter Calculator</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Fill in your details below to calculate your health parameters. Make sure to use the given units.</p>
+      </div>
 
-<div class="lg:w-1/2 md:w-2/3 mx-auto">
-<div class="flex flex-wrap -m-2">
-<!-- Existing input fields kept as-is -->
-<!-- Weight, Height, Age, Gender, etc. -->
-<!-- ... -->
-<div class="p-2 w-full">
-<button type="button" onclick="calculate(); updateHealthMeter();" class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Calculate Health Parameters</button>
-</div>
-</div>
-</div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
 
-<!-- Health Risk Meter -->
-<div class="mt-10 text-center">
-<h2 class="text-white text-2xl font-semibold mb-4">Health Risk Meter</h2>
-<div class="health-meter" id="healthMeter">
-  <div class="needle" id="needle"></div>
-</div>
-<div class="health-status text-white mt-4" id="healthStatus">Fill your details and calculate.</div>
-</div>
+          <!-- Weight -->
+          <div class="p-2 w-full">
+            <label for="weight" class="leading-7 text-sm text-white">Your Weight (kg):</label>
+            <input type="number" step="any" id="weight" name="WEIGHT" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 text-white py-2 px-3 outline-none" required>
+          </div>
 
-</div>
-</section>
+          <!-- Height -->
+          <div class="p-2 w-full">
+            <label for="height" class="leading-7 text-sm text-white">Your Height (cm):</label>
+            <input type="number" step="any" id="height" onchange="calc()" name="HEIGHT" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 text-white py-2 px-3 outline-none" required>
+          </div>
+
+          <!-- Age -->
+          <div class="p-2 w-full">
+            <label for="age" class="leading-7 text-sm text-white">Your Age (years):</label>
+            <input type="number" id="age" name="AGE" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 text-white py-2 px-3 outline-none" required>
+          </div>
+
+          <!-- Gender -->
+          <div class="p-2 w-full">
+            <label for="gen" class="leading-7 text-sm text-white">Your Gender (Male/Female):</label>
+            <input type="text" id="gen" onchange="calculate()" name="GENDER" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 text-white py-2 px-3 outline-none" required>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="p-2 w-full text-center">
+            <button type="button" onclick="calculate()" class="bg-red-500 text-white py-2 px-6 rounded hover:bg-red-600">Calculate My Health Parameters</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 </form>
+
 
 <script type="text/javascript">
 // Existing calculation functions (BMI, BFP, etc.)
@@ -171,5 +186,6 @@ function updateHealthMeter() {
 
 </body>
 </html>
+
 
 
