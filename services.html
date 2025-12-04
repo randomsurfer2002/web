@@ -1,218 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services – Wellness & Health</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: "Poppins", sans-serif;
-            background: #0a0a0a;
-            color: white;
-        }
-
-        /* Header */
-        header {
-            background: #ff00aa;
-            padding: 25px;
-            text-align: center;
-            color: white;
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        /* Navbar */
-        nav {
-            background: black;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #ff00aa;
-            margin: 0 18px;
-            font-size: 18px;
-            transition: 0.2s;
-        }
-
-        nav a:hover {
-            color: white;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        h2 {
-            color: #ff00aa;
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-        }
-
-        .service-box {
-            background: rgba(255, 0, 170, 0.1);
-            border: 2px solid #ff00aa;
-            border-radius: 18px;
-            padding: 25px;
-            text-align: center;
-            backdrop-filter: blur(4px);
-            transition: 0.3s ease-in-out;
-        }
-
-        .service-box:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 0 25px #ff00aa;
-        }
-
-        svg {
-            width: 65px;
-            height: 65px;
-            margin-bottom: 15px;
-            fill: #ff00aa;
-        }
-
-        h3 {
-            color: #ff00aa;
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            padding: 20px;
-            background: #ff00aa;
-            color: black;
-            font-weight: bold;
-        }
-
-        /* Mobile Fix */
-        @media(max-width: 500px) {
-            header { font-size: 26px; }
-            nav a { font-size: 15px; margin: 0 10px; }
-            h2 { font-size: 28px; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Services | Purity With Pallavi</title>
+  <style>
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeIn 0.9s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    button:hover {
+      transform: scale(1.03);
+      transition: transform 0.22s ease;
+    }
+  </style>
 </head>
+<body class="bg-gray-900 text-white">
 
-<body>
-
-<header>Our Services</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="weightloss.html">Weight-loss</a>
-    <a href="bodyparameters.html">Body Parameters</a>
-    <a href="aboutus.html">About Us</a>
-    <a href="contactus.html">Contact</a>
-</nav>
-
-<div class="container">
-    <h2>What We Offer</h2>
-
-    <div class="services-grid">
-
-        <!-- 1. Get a Coach -->
-        <div class="service-box">
-            <svg viewBox="0 0 24 24">
-                <path d="M12 2a7 7 0 100 14 7 7 0 000-14zm-9 18c0-4 8-6.2 9-6.2S21 16 21 20v2H3v-2z"/>
-            </svg>
-            <h3>Get a Coach</h3>
-            <p>Receive personalized guidance from certified wellness experts who help you stay consistent, motivated, and accountable throughout your health journey.</p>
-        </div>
-
-        <!-- 2. Live Chat Support -->
-        <div class="service-box">
-            <svg viewBox="0 0 24 24">
-                <path d="M2 3h20v14H6l-4 4V3z" />
-            </svg>
-            <h3>Live Chat Support</h3>
-            <p>Instant assistance whenever you need help. Ask questions, share updates, and get real-time support from your health advisor.</p>
-        </div>
-
-        <!-- 3. Complimentary Nutrition Products -->
-        <div class="service-box">
-            <svg viewBox="0 0 24 24">
-                <path d="M7 2v20M17 2v20M3 6h18" />
-            </svg>
-            <h3>Complimentary Nutrition Products</h3>
-            <p>Get access to curated nutrition products that support your fitness and weight-loss program, enhancing your results safely.</p>
-        </div>
-
-        <!-- 4. Fit Hour Club -->
-        <div class="service-box">
-            <svg viewBox="0 0 24 24">
-                <path d="M12 2l4 8H8l4-8zm0 20l-4-8h8l-4 8z" />
-            </svg>
-            <h3>Fit Hour Club</h3>
-            <p>Join our daily fitness sessions designed to improve strength, mobility, stamina, and overall well-being in a fun and energetic environment.</p>
-        </div>
-
-        <!-- 5. Family & Fun Events -->
-        <div class="service-box">
-            <svg viewBox="0 0 24 24">
-                <path d="M12 7a5 5 0 110 10 5 5 0 010-10zm-9 9h4v4H3v-4zm14 0h4v4h-4v-4z" />
-            </svg>
-            <h3>Family & Fun Events</h3>
-            <p>Participate in exciting group activities that promote healthy living, teamwork, and community bonding for the whole family.</p>
-        </div>
-
-        <!-- 6. Money-Back Guarantee -->
-        <div class="service-box">
-            <svg viewBox="0 0 24 24">
-                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
-            </svg>
-            <h3>Money-Back Guarantee</h3>
-            <p>Your transformation is our priority. If you follow the plan and don’t see progress, we offer a no-questions-asked refund.</p>
-        </div>
-
-        <!-- 7. Healthy Meal Ideas -->
-        <div class="service-box">
-            <svg viewBox="0 0 24 24">
-                <path d="M12 2C8 2 4 6 4 10c0 7 8 12 8 12s8-5 8-12c0-4-4-8-8-8z" />
-            </svg>
-            <h3>Healthy Meal Ideas</h3>
-            <p>We provide weekly nutrition plans and delicious meal ideas that fit your macros and help you stay on track effortlessly.</p>
-        </div>
-
-        <!-- 8. Personal Diet Planning -->
-        <div class="service-box">
-            <svg viewBox="0 0 24 24">
-                <path d="M4 4h16v16H4z M8 8h8v2H8zm0 4h8v2H8z" />
-            </svg>
-            <h3>Personal Diet Planning</h3>
-            <p>Get a customized diet plan built specifically for your body goals, lifestyle, preferences, and long-term wellness needs.</p>
-        </div>
-
+  <!-- Header -->
+  <header class="text-white body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a href="index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <img class="object-cover object-center rounded" alt="Purity With Pallavi" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
+        <span class="ml-5 text-xl">Purity With Pallavi</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a href="Weightloss.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-pink-500">Health Comeback Stories</a>
+        <a href="aboutus.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-pink-500">About Us</a>
+        <a href="Contactus.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-pink-500">Contact Us</a>
+        <a href="services.html" class="mr-10 text-sm font-semibold leading-6 text-white hover:text-pink-500">Services</a>
+      </nav>
+      <button onclick="location.href='Bodyparameter.html'" class="inline-flex items-center bg-pink-500 border-0 py-1 px-3 focus:outline-none hover:bg-pink-400 rounded text-base mt-4 md:mt-0">
+        FIND MY PARAMETERS!
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
     </div>
-</div>
+  </header>
 
-<footer>
-    © 2025 Wellness & Health – All Rights Reserved
-</footer>
+  <!-- Services Content -->
+  <main class="fade-in">
+    <section class="text-gray-200 bg-gray-900 body-font">
+      <div class="container px-5 py-24 mx-auto flex flex-col">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-pink-500">Our Services</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-300">
+            At <b>Purity With Pallavi</b>, we offer a complete suite of services to guide you towards a healthier, happier life. From personalized coaching to nutrition support and engaging fitness activities, we ensure your wellness journey is supported every step of the way.
+          </p>
+        </div>
+
+        <!-- Services grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+          <!-- Service 1 -->
+          <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a7 7 0 100 14 7 7 0 000-14zm-9 18c0-4 8-6.2 9-6.2S21 16 21 20v2H3v-2z" />
+            </svg>
+            <h2 class="text-xl font-bold text-pink-500 mb-2">Get a Coach</h2>
+            <p>Personalized guidance from wellness coaches to keep you consistent, motivated, and accountable.</p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 3h20v14H6l-4 4V3z" />
+            </svg>
+            <h2 class="text-xl font-bold text-pink-500 mb-2">Live Chat Support</h2>
+            <p>Get instant answers to your doubts about diet, workouts, or lifestyle anytime.</p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 2v20M17 2v20M3 6h18" />
+            </svg>
+            <h2 class="text-xl font-bold text-pink-500 mb-2">Complimentary Nutrition Products</h2>
+            <p>Selected plans include free high-quality nutrition products to boost energy and metabolism.</p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l4 8H8l4-8zm0 20l-4-8h8l-4 8z" />
+            </svg>
+            <h2 class="text-xl font-bold text-pink-500 mb-2">Fit Hour Club</h2>
+            <p>Join daily one-hour sessions for workouts, stretching, flexibility, and lifestyle training.</p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7a5 5 0 110 10 5 5 0 010-10zm-9 9h4v4H3v-4zm14 0h4v4h-4v-4z" />
+            </svg>
+            <h2 class="text-xl font-bold text-pink-500 mb-2">Family & Fun Events</h2>
+            <p>Participate in fun fitness events, games, and activities with your family and community.</p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+            </svg>
+            <h2 class="text-xl font-bold text-pink-500 mb-2">30-Day Money Back Guarantee</h2>
+            <p>If no results are achieved despite following the plan, get your money back with no questions asked.</p>
+          </div>
+
+          <!-- Service 7 -->
+          <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8 2 4 6 4 10c0 7 8 12 8 12s8-5 8-12c0-4-4-8-8-8z" />
+            </svg>
+            <h2 class="text-xl font-bold text-pink-500 mb-2">Healthy Meal Ideas</h2>
+            <p>Tasty, easy, and nutritious meal ideas that fit your weight-loss or fitness goals without starving.</p>
+          </div>
+
+          <!-- Service 8 -->
+          <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-3 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16v16H4z M8 8h8v2H8zm0 4h8v2H8z" />
+            </svg>
+            <h2 class="text-xl font-bold text-pink-500 mb-2">Personal Diet Planning</h2>
+            <p>Custom diet plans tailored for your body type, goals, lifestyle, and preferences.</p>
+          </div>
+
+        </div>
+
+        <!-- Contact Us Button -->
+        <div class="text-center mt-12">
+          <button onclick="location.href='Contactus.html'" class="inline-flex items-center bg-pink-500 border-0 py-3 px-6 rounded text-white font-semibold hover:bg-pink-400">
+            Contact Us for Services
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-gray-400 body-font mt-12">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="index.html">
+        <img class="object-cover object-center rounded" alt="Purity With Pallavi" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
+        <span class="ml-10 text-xl">Purity With Pallavi</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-pink-500 sm:py-4 sm:mt-0 mt-4">© 2025 Purity With Pallavi</p>
+    </div>
+  </footer>
 
 </body>
 </html>
+
+
 
 
 
