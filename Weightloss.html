@@ -2,58 +2,248 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weight Loss - RevitalFit</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
-
-<body>
-
-<header>
-    <nav class="navbar">
-        <div class="logo">RevitalFit</div>
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
-
-        <ul class="nav-links" id="navMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="Weightloss.html" class="active">Weight Loss</a></li>
-            <li><a href="Bodyparameter.html">Body Parameter</a></li>
-            <li><a href="Contactus.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="page-header">
-    <h1>Weight Loss Plans</h1>
-    <p>Structured, science-backed & sustainable fat loss programs.</p>
-</section>
-
-<section class="content-section">
-    <h2>How It Works</h2>
-    <p>We follow a holistic weight loss approach with diet, workouts, and habit formation.</p>
-
-    <h2>What You Receive</h2>
-    <ul>
-        <li>Personalized calorie chart</li>
-        <li>Home + Gym workout plan</li>
-        <li>Weekly progress tracking</li>
-        <li>Healthy meal suggestions</li>
-    </ul>
-</section>
-
-<footer>
-    <p>© 2024 RevitalFit. All Rights Reserved.</p>
-</footer>
-
-<script>
-    function toggleMenu() {
-        document.getElementById("navMenu").classList.toggle("show");
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Purity With Pallavi: Your Wellness Coach</title>
+    <style>
+    .mr-10 {
+      margin-left: 20px;
     }
+  </style>
+</head>
+<body  bgcolor="white"> 
+    
+    <header class="text-black-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a href="https://randomsurfer2002.github.io/web/" class="flex title-font font-medium items-center text-black-900 mb-4 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
+            <span class="ml-5 text-xl">Purity With Pallavi</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a href="Weightloss.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Health Comeback Stories</a>
+            <a href="aboutus.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">About Us</a>
+            <a href="Contactus.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Contact Us</a>
+               <a href="services.html" class="mr-10 text-sm font-semibold leading-6 text-gray-900 hover:text-red-900">Services</a>
+          </nav>
+            <button onclick= "location.href= 'Bodyparameter.html'" class="inline-flex items-center bg-red-400 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 rounded text-base mt-4 md:mt-0">FIND MY PARAMETERS!
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+
+           <form name="TESTING">
+        <section class="text-gray-400 bg-gray-900 body-font relative">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Basic Health Parameter Calculator</h1>
+              <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Let's check some of your basic health parameters, And let's see if you are really fit?(Please fill the details orderwise or else wrong data will be shown to you andwrite only in given units)</p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+              <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="weight" class="leading-7 text-sm text-gray-400">(1)Your Weight(KGs):</label>
+                    <input type="number" step="any" id="weight"  name="WEIGHT" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                </div>
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="height" class="leading-7 text-sm text-gray-400">(2)Your Height(in cms):</label>
+                    <input type="number" step="any" id="height"  onchange="calc()" name="HEIGHT" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="age" class="leading-7 text-sm text-gray-400">(3)Your Age(in years):</label>
+                      <input type="number" id="age" name="AGE" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="gen" class="leading-7 text-sm text-gray-400">(4)Your Gender(MALE/FEMALE):</label>
+                      <input type="text" id="gen"  onchange="calculate()" name="GENDER" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                   <section class="text-gray-400 bg-gray-900 body-font">
+                  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                  <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                  <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Your Results: 
+                  </h1>
+                  </div>
+                  </div>
+                  </section>
+                  <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="mhr" class="leading-7 text-sm text-gray-400">(5)Your Max. Heart Rate(in bpm):</label>
+                    <input type="number" step="any" id="mhr" name="MHR" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                </div>
+                    <div class="p-2 w-1/2">
+                      <div class="relative">
+                        <label for="bfp" class="leading-7 text-sm text-gray-400">(6)Your Body Fat %:</label>
+                        <input type="number" step="any" id="bfp"  name="BFP" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      </div>
+                    </div>
+                      <div class="p-2 w-1/2">
+                        <div class="relative">
+                          <label for="vfp" class="leading-7 text-sm text-gray-400">(7)Your visceral Fat %:</label>
+                          <input type="number" step="any" id="vfp"name="VFP" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                      </div>
+                   <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="bmr" class="leading-7 text-sm text-gray-400">(8)Your BMR(Besal metabolic rate)</label>
+                      <input type="number" step="any" id="bmr" name="BMR" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                   <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="wi" class="leading-7 text-sm text-gray-400">(9)Your Water Intake(how much water should you drink in a day:)</label>
+                      <input type="number" step="any" id="wi" name="WI" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="bmi" class="leading-7 text-sm text-gray-400">(10)Your BMI(Body Mass Index)</label>
+                      <input type="number" step="any" id="bmi" name="BMI" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                   <div class="p-2 w-1/2">
+                        <div class="relative">
+                          <label for="iw" class="leading-7 text-sm text-gray-400">(11)Your Approx Ideal Weight:</label>
+                          <input type="number" step="any" id="iw"name="IW" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                      </div>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </form>
+
+<script type="text/javascript">
+
+    function calculate() 
+    {var Age = document.TESTING.AGE.value, bmi = document.TESTING.BMI.value, gen = document.TESTING.GENDER.value,  h = document.TESTING.HEIGHT.value, weight = document.TESTING.WEIGHT.value
+            if(gen.includes("female")) {bfp = (1.2 * bmi) + (0.23 * Age)-5.4
+            document.TESTING.BFP.value = bfp
+            bmr = (10 * weight) + (6.25 * h) -(5 * Age) - 161
+            document.TESTING.BMR.value = bmr
+            wi = (2.204 * weight) / 67.6
+            document.TESTING.WI.value = wi
+            mhr = 220 - Age
+            document.TESTING.MHR.value = mhr                            
+            ideal = (h - 105)
+            document.TESTING.IW.value = ideal;}
+            else if(gen.includes("Female")) {bfp = (1.2 * bmi) + (0.23 * Age)-5.4
+            document.TESTING.BFP.value = bfp
+            bmr = (10 * weight) + (6.25 * h) -(5 * Age) - 161
+            document.TESTING.BMR.value = bmr
+            wi = (2.204 * weight) / 67.6
+            document.TESTING.WI.value = wi
+            mhr = 220 - Age
+            document.TESTING.MHR.value = mhr
+            ideal = (h - 105)
+            document.TESTING.IW.value = ideal;}
+            else if(gen.includes("FEMALE")) {bfp = (1.2 * bmi) + (0.23 * Age)-5.4
+            document.TESTING.BFP.value = bfp
+            bmr = (10 * weight) + (6.25 * h) -(5 * Age) - 161
+            document.TESTING.BMR.value = bmr
+            wi = (2.204 * weight) / 67.6
+            document.TESTING.WI.value = wi 
+            mhr = 220 - Age
+            document.TESTING.MHR.value = mhr                                 
+            ideal = (h - 105)
+            document.TESTING.IW.value = ideal;}
+            else{bfp = (1.2 * bmi) + (0.23 * Age)-16.2
+            document.TESTING.BFP.value = bfp
+            bmr = (10 * weight) + (6.25 * h) -(5 * Age) - 161
+            document.TESTING.BMR.value = bmr
+            wi = (2.204 * weight) / 67.6
+            document.TESTING.WI.value = wi 
+            mhr = 220 - Age
+            document.TESTING.MHR.value = mhr
+            ideal = (h - 100)
+            document.TESTING.IW.value = ideal;}
+            if(bmi>30){
+            vfp = (bfp*0.48)
+            document.TESTING.VFP.value = vfp;}
+            else{ 
+            vfp = (bfp*0.29)
+            document.TESTING.VFP.value = vfp;}}
+    
+         function calc()
+         {var USERINPUT1 = document.TESTING.WEIGHT.value, USERINPUT2 = document.TESTING.HEIGHT.value, 
+            bmi = (USERINPUT1 * 10000)/(USERINPUT2 * USERINPUT2);
+         document.TESTING.BMI.value = bmi;}  
+    
 </script>
 
+
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+      <img class="object-cover object-center rounded" alt="hero" src="https://raw.githubusercontent.com/randomsurfer2002/web/main/all%20photos/body-mass-index-chart-bmi-man-woman-scale_53500-461.webp">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Chart for Body mass index. 
+      </h1>
+      <p class="mb-8 leading-relaxed">Match your results with these charts to know how fit you are.</p>
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+      <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/sadasd.png?raw=true">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Chart for Body fat percentage.
+      </h1>
+      <p class="mb-8 leading-relaxed"> Match your results with these charts to know how fit you are.</p>
+    </div>
+  </div>
+</section>
+
+     <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img class="object-cover object-center rounded" alt="hero" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/Untitled%20(1).png?raw=true" width="200" height="90">
+            <span class="ml-10 text-xl">Purity With Pallavi</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-40 sm:border-l-2 sm:border-red-500 sm:py-14 sm:mt-0 mt-4">© 2023 Purity With Pallavi 
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="https://instagram.com/purity_with_pallavi?igshid=Zjc2ZTc4Nzk=" class="ml-3 text-red-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+              <a href="https://www.youtube.com/@purity198" class="ml-3 text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" id="mainIconPathAttribute"></path> </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100089657191641&mibextid=ZbWKwL" class="ml-3 text-blue-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+              </a>
+            <a class="ml-3 text-purple-500">
+              
+            </a>
+          </span>
+        </div>
+      </footer>
+
+
+    
 </body>
 </html>
+
 
 
