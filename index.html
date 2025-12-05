@@ -14,26 +14,35 @@
 
 <body class="bg-black text-white">
 
-<!-- HEADER (KEPT EXACTLY AS YOU WANT IT) -->
-<header class="mb-16 flex flex-col items-center pt-6">
-    <a href="#" class="logo mb-6 block">
-        <img src="main logo.png" alt="Purity Health Logo" class="w-52 mx-auto">
+<!-- HEADER -->
+<header class="w-full flex items-center justify-between px-8 py-6 mb-16">
+
+    <!-- LEFT: LOGO -->
+    <a href="#" class="logo block">
+        <img src="main logo.png" alt="Purity Health Logo" class="w-40">
     </a>
 
-    <ul class="navlist flex gap-10 text-lg font-medium mb-6">
+    <!-- CENTER: NAV LIST -->
+    <ul class="navlist hidden md:flex gap-10 text-lg font-medium">
         <li><a href="Contactus.html">Contact Us</a></li>
         <li><a href="Weightloss.html">Health Comeback Stories</a></li>
         <li><a href="aboutus.html">About Us</a></li>
         <li><a href="services.html">Services</a></li>
     </ul>
 
-    <div class="right-content">
-        <a href="Bodyparameter.html" class="nav-btn px-6 py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700">
+    <!-- RIGHT: PARAMETER BUTTON -->
+    <div class="right-content flex items-center gap-4">
+        <a href="Bodyparameter.html"
+           class="nav-btn px-6 py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700 whitespace-nowrap">
             Find My Parameters!
         </a>
-        <div class="bx bx-menu text-3xl mt-4" id="menu-icon"></div>
+
+        <!-- MENU ICON (mobile only) -->
+        <div class="bx bx-menu text-3xl md:hidden" id="menu-icon"></div>
     </div>
+
 </header>
+
 
 <!-- HERO SECTION (SPACING FIXED) -->
 <section class="hero mb-28 text-center">
@@ -183,6 +192,8 @@
 
 </body>
 </html>
+
+
 
 
 
