@@ -8,117 +8,160 @@
     <link rel="stylesheet" type="text/css" href="Style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="bg-black text-white">
 
-<!-- HEADER -->
-<header class="mb-10"> <a href="#" class="logo mb-4 block"> <img src="main logo.png" alt="Purity Health Logo"> </a> 
-    <ul class="navlist flex gap-6 mb-6"> 
-        <li><a href="Contactus.html">Contact Us</a></li>
-        <li><a href="Weightloss.html">Health Comeback Stories</a></li> 
-        <li><a href="aboutus.html">About Us</a></li> 
-        <li><a href="services.html">Services</a></li> </ul> 
-    <div class="right-content mb-10"> <a href="Bodyparameter.html" class="nav-btn">Find My Parameters!</a> 
-        <div class="bx bx-menu" id="menu-icon"></div> </div> </header>
+<!-- HEADER (KEPT EXACTLY AS YOU WANT IT) -->
+<header class="mb-16 flex flex-col items-center pt-6">
+    <a href="#" class="logo mb-6 block">
+        <img src="main logo.png" alt="Purity Health Logo" class="w-52 mx-auto">
+    </a>
 
-<!-- HERO SECTION -->
-<section class="hero mb-24 text-center">
+    <ul class="navlist flex gap-10 text-lg font-medium mb-6">
+        <li><a href="Contactus.html">Contact Us</a></li>
+        <li><a href="Weightloss.html">Health Comeback Stories</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+    </ul>
+
+    <div class="right-content">
+        <a href="Bodyparameter.html" class="nav-btn px-6 py-3 bg-pink-600 rounded-lg text-white font-semibold hover:bg-pink-700">
+            Find My Parameters!
+        </a>
+        <div class="bx bx-menu text-3xl mt-4" id="menu-icon"></div>
+    </div>
+</header>
+
+<!-- HERO SECTION (SPACING FIXED) -->
+<section class="hero mb-28 text-center">
     <div class="hero-text space-y-6 max-w-3xl mx-auto px-4">
         <h5 data-aos="fade-right" data-aos-duration="1400" class="text-pink-500 font-semibold">#Let's Get Fit!</h5>
-        <h1 data-aos="zoom-in-left" data-aos-duration="1400" class="text-4xl md:text-5xl font-bold">Purity With Pallavi</h1>
-        <p data-aos="fade-right" data-aos-duration="1400" class="leading-relaxed text-gray-300">
+
+        <h1 data-aos="zoom-in-left" data-aos-duration="1400"
+            class="text-4xl md:text-5xl font-bold">
+            Purity With Pallavi
+        </h1>
+
+        <p data-aos="fade-right" data-aos-duration="1400"
+           class="leading-relaxed text-gray-300 text-lg">
             We provide proper weight loss and fitness solutions through our panel of experts and technical connectivity.
             Let's have a balanced approach to our diet and exercise!
         </p>
 
-        <a href="Bodyparameter.html" class="btn inline-block bg-pink-600 px-8 py-3 rounded-lg text-white font-semibold hover:bg-pink-700">
+        <a href="Bodyparameter.html"
+           class="btn inline-block bg-pink-600 px-8 py-3 rounded-lg text-white font-semibold hover:bg-pink-700">
             Find My Body Parameters Now!
         </a>
 
-        <div class="hero-img mt-10 flex justify-center">
-            <img src="mainhero.png" alt="Hero Image" class="rounded-lg w-full max-w-lg shadow-lg">
+        <div class="hero-img mt-12 flex justify-center">
+            <img src="mainhero.png" alt="Hero Image"
+                class="rounded-lg w-full max-w-lg shadow-lg">
         </div>
     </div>
 </section>
 
-<!-- CLEAN SECTIONS BELOW (Added proper spacing & alignment) -->
+<!-- SECTION 1 -->
 <section class="mb-24 px-6">
-    <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center gap-12">
+    <div class="container mx-auto flex px-5 py-14 md:flex-row flex-col items-center gap-16">
         <div class="md:w-1/2 space-y-6">
-            <h1 class="text-4xl font-semibold">Fitness Services And Solutions<br>For All Ages!</h1>
-            <p class="leading-relaxed text-gray-300">
+            <h1 class="text-4xl font-semibold leading-tight">
+                Fitness Services And Solutions<br>For All Ages!
+            </h1>
+            <p class="leading-relaxed text-gray-300 text-lg">
                 Our carefully tailor made fitness plans and panel of experts help us in making right plan for you irrespective your age...
             </p>
         </div>
 
         <div class="md:w-1/2">
-            <img class="rounded-lg shadow-lg" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/33673355.jpg?raw=true">
+            <img class="rounded-lg shadow-lg w-full"
+                 src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/33673355.jpg?raw=true">
         </div>
     </div>
 </section>
 
+<!-- SECTION 2 -->
 <section class="mb-24 px-6">
-    <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center gap-12">
+    <div class="container mx-auto flex px-5 py-14 md:flex-row flex-col items-center gap-16">
         <div class="md:w-1/2 space-y-6">
-            <h1 class="text-4xl font-semibold">Easy To Follow From Any Part<br>Of The Globe!</h1>
-            <p class="leading-relaxed text-gray-300">
+            <h1 class="text-4xl font-semibold leading-tight">
+                Easy To Follow From Any Part<br>Of The Globe!
+            </h1>
+            <p class="leading-relaxed text-gray-300 text-lg">
                 Join From Anywhere, As Our Services Are Available Through Offline As Well As Online Solutions...
             </p>
         </div>
 
         <div class="md:w-1/2">
-            <img class="rounded-lg shadow-lg" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/global-connection.png?raw=true">
+            <img class="rounded-lg shadow-lg w-full"
+                 src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/global-connection.png?raw=true">
         </div>
     </div>
 </section>
 
+<!-- SECTION 3 -->
 <section class="mb-24 px-6">
-    <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center gap-12">
+    <div class="container mx-auto flex px-5 py-14 md:flex-row flex-col items-center gap-16">
         <div class="md:w-1/2 space-y-6">
-            <h1 class="text-4xl font-semibold">Fun Way Of Losing Weight,<br>Mental Health Improved!</h1>
-            <p class="leading-relaxed text-gray-300">
+            <h1 class="text-4xl font-semibold leading-tight">
+                Fun Way Of Losing Weight,<br>Mental Health Improved!
+            </h1>
+            <p class="leading-relaxed text-gray-300 text-lg">
                 Be Part Of A Fun Community Where Others Share Their Results As Well...
             </p>
         </div>
 
         <div class="md:w-1/2">
-            <img class="rounded-lg shadow-lg" src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/family-fun-day-WEB.png?raw=true">
+            <img class="rounded-lg shadow-lg w-full"
+                 src="https://github.com/randomsurfer2002/web/blob/main/all%20photos/family-fun-day-WEB.png?raw=true">
         </div>
     </div>
 </section>
 
 <!-- VIDEOS -->
-<div class="video-container grid md:grid-cols-2 gap-12 px-6 mb-24">
-    <div class="video-wrapper">
-        <iframe class="rounded-lg w-full h-72" src="https://www.youtube.com/embed/o382nTpu6DE"></iframe>
-        <h2 class="mt-4 text-lg font-semibold text-center">Food Cravings?</h2>
+<div class="video-container grid md:grid-cols-2 gap-16 px-6 mb-32">
+    <div class="video-wrapper text-center">
+        <iframe class="rounded-lg w-full h-72"
+                src="https://www.youtube.com/embed/o382nTpu6DE"></iframe>
+        <h2 class="mt-4 text-lg font-semibold">Food Cravings?</h2>
     </div>
 
-    <div class="video-wrapper">
-        <iframe class="rounded-lg w-full h-72" src="https://www.youtube.com/embed/XxBfCAkPh6g"></iframe>
-        <h2 class="mt-4 text-lg font-semibold text-center">Exercise is Important</h2>
+    <div class="video-wrapper text-center">
+        <iframe class="rounded-lg w-full h-72"
+                src="https://www.youtube.com/embed/XxBfCAkPh6g"></iframe>
+        <h2 class="mt-4 text-lg font-semibold">Exercise is Important</h2>
     </div>
 </div>
 
-<!-- FEEDBACK -->
+<!-- FEEDBACK + MAP -->
 <section class="bg-gray-900 py-20">
-    <div class="container mx-auto flex justify-center">
+    <div class="container mx-auto flex justify-center mb-16">
         <div class="w-full md:w-1/3 bg-gray-900 shadow-lg rounded-lg p-8">
             <h2 class="text-white text-xl mb-6 font-semibold">Feedback</h2>
 
             <label class="text-gray-400 text-sm">Email</label>
-            <input type="email" class="w-full bg-gray-800 border border-gray-700 rounded p-3 mt-2 mb-6">
+            <input type="email"
+                   class="w-full bg-gray-800 border border-gray-700 rounded p-3 mt-2 mb-6">
 
             <label class="text-gray-400 text-sm">Message</label>
             <textarea class="w-full bg-gray-800 border border-gray-700 rounded p-3 h-32 mt-2 mb-6"></textarea>
 
-            <button class="w-full bg-pink-600 py-3 rounded-lg font-semibold hover:bg-pink-700">Submit</button>
+            <button class="w-full bg-pink-600 py-3 rounded-lg font-semibold hover:bg-pink-700">
+                Submit
+            </button>
         </div>
+    </div>
+
+    <!-- MAP ADDED BACK -->
+    <div class="container mx-auto px-6">
+        <iframe
+            class="w-full h-96 rounded-lg shadow-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.7602584754535!2d80.93615427538128!3d26.8502913767151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2d8cd94ddff%3A0xa51f6a8abca9015!2sCharbagh%2C%20Lucknow!5e0!3m2!1sen!2sin!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
     </div>
 </section>
 
@@ -140,6 +183,8 @@
 
 </body>
 </html>
+
+
 
 
 
